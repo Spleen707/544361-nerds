@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Артём Косаренко](https://up.htmlacademy.ru/htmlcss/19/user/544361).
-* Наставник: [Удовенко Наташа](https://htmlacademy.ru/profile/id7570)
+* Наставник: [Удовенко Мария](https://htmlacademy.ru/profile/id7570)
 
 ---
 
