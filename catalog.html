@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="index.html" class="main-header-logo">
+          <img src="img/index-logo.svg" alt="Логотип студии Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li class="site-navigation-current"><a href="store.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><p class="shopping cart">Корзина</p></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+
+      <section class="filters">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+
+          <div class="price">
+          <form class="price-form" action="" method="get" oninput="sum1.value=price.value">
+            <label for="price-field">Стоимость</label>
+              <input type="range" name="price" id="price-field" min="0" max="20000" step="1000">
+              от<output name="sum1"></output>
+              до<output></output>
+          </form>
+        </div>
+
+        <div class="grid">
+          <form class="grid-form" action="" method="post">
+            Сетка<br>
+            <label>
+              <input type="radio" name="grid" id="grid-field1" value="1" checked>Адаптивная
+            </label>
+            <label>
+              <input type="radio" name="grid" id="grid-field2" value="2">Фиксированная
+            </label>
+            <label>
+              <input type="radio" name="grid" id="grid-field3" value="3">Резиновая
+            </label>
+          </form>
+        </div>
+
+  <!--честно говоря не знаю, нужно ли их в список оборачивать, я так и не решил-->
+        <div class="features">
+          <form class="features-form" action="" method="get">
+            Особенности<br>
+            <label>
+              <input type="checkbox" name="slider" id="slider-field" checked>Слайдер
+            </label>
+            <label>
+              <input type="checkbox" name="block-features" id="block-features-field">Блок преимуществ
+            </label>
+            <label>
+              <input type="checkbox" name="news" id="news-field" checked>Новости
+            </label>
+            <label>
+              <input type="checkbox" name="gallery" id="gallery-field">Галерея
+            </label>
+            <label>
+              <input type="checkbox" name="cart" id="cart-field">Корзина
+            </label>
+          </form>
+        </div>
+
+        <div class="show">
+          <form class="show-form" action="" method="post">
+            <input type="submit" id="show-field" value="Показать">
+            </input>
+          </form>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+
+        <div class="sorting">
+          <span>по цене</span>
+          <span>по типу</span>
+          <span>по названию</span>
+        </div>
+
+        <div class="products">
+          <ul class="products-list">
+            <li class="products-item">
+              <h3 class="visually-hidden">Sedona Информационный сайт для туристов</h3>
+                <a href="">
+                  <img src="" width="" height="" alt="Sedona Информационный сайт для туристов">
+                </a>
+              </li>
+              <li class="products-item">
+                <h3 class="visually-hidden">Приложение pink</h3>
+                  <a href="">
+                    <img src="" width="" height="" alt="Приложение pink">
+                  </a>
+                </li>
+                <li class="products-item">
+                  <h3 class="visually-hidden">Барбершоп "Бородинский"</h3>
+                    <a href="">
+                      <img src="" width="" height="" alt="Барбершоп Бородинский">
+                    </a>
+                  </li>
+                  <li class="products-item">
+                    <h3 class="visually-hidden">Mishka милые штуки ручной работы для дома</h3>
+                      <a href="">
+                        <img src="" width="" height="" alt="Mishka">
+                      </a>
+                    </li>
+                    <li class="products-item">
+                      <h3 class="visually-hidden">Сайт обучения</h3>
+                        <a href="">
+                          <img src="" width="" height="" alt="Сайт обучения">
+                        </a>
+                      </li>
+                      <li class="products-item">
+                        <h3 class="visually-hidden">Кваст крафтовый квас</h3>
+                          <a href="">
+                            <img src="" width="" height="" alt="Кваст">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="selector-page">
+                      <a href="">1</a>
+                      <a href="">2</a>
+                      <a href="">3</a>
+                      <a href="">Следующая</a>
+                    </div>
+                  </section>
+                </main>
+
+                  <footer class="main-footer">
+                    <a href="">Nerds design studio</a>
+                    <p class="footer-address">
+                      191186, Санкт-Петербург,<br>
+                      ул. Б.Конюшенная, д.19/8<br>
+                    </p>
+                    <p class="footer-contacts">
+                      тел. +7(812)275-75-75
+                    </p>
+                    <a class="write-to-us" href="">Напишите нам</a>
+
+                    <div class="footer-social">
+                      <b>Давайте дружить, это выгодно!</b>
+                      <p>Скидка 10% для друзей из социальных сетей.</p>
+                      <ul>
+                        <li><a class="social-button" href="">Вконтакте</a></li>
+                        <li><a class="social-button" href="">Фейсбук</a></li>
+                        <li><a class="social-button" href="">Инстаграмм</a></li>
+                      </ul>
+                    </div>
+                  </footer>
+                </body>
+              </html>
