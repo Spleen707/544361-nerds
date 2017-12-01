@@ -15,7 +15,7 @@
           <li><a href="clients.html">Клиенты</a></li>
           <li class="site-navigation-current"><a href="store.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
-          <li><p class="shopping cart">Корзина</p></li>
+          <li class="shopping cart"><a href="shopping-cart.html">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -33,10 +33,10 @@
               от<output name="sum1"></output>
               до<output></output>
           </form>
-        </div>
+          </div>
 
-        <div class="grid">
-          <form class="grid-form" action="" method="post">
+        <form class="grid-form" action="" method="post">
+          <div class="grid">
             Сетка<br>
             <label>
               <input type="radio" name="grid" id="grid-field1" value="1" checked>Адаптивная
@@ -47,12 +47,9 @@
             <label>
               <input type="radio" name="grid" id="grid-field3" value="3">Резиновая
             </label>
-          </form>
-        </div>
+          </div>
 
-  <!--честно говоря не знаю, нужно ли их в список оборачивать, я так и не решил-->
-        <div class="features">
-          <form class="features-form" action="" method="get">
+          <div class="features">
             Особенности<br>
             <label>
               <input type="checkbox" name="slider" id="slider-field" checked>Слайдер
@@ -69,24 +66,22 @@
             <label>
               <input type="checkbox" name="cart" id="cart-field">Корзина
             </label>
-          </form>
-        </div>
+          </div>
 
-        <div class="show">
-          <form class="show-form" action="" method="post">
+          <div class="show">
             <input type="submit" id="show-field" value="Показать">
             </input>
-          </form>
-        </div>
+          </div>
+        </form>
       </section>
 
       <section class="catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
 
         <div class="sorting">
-          <span>по цене</span>
-          <span>по типу</span>
-          <span>по названию</span>
+          <a href="">по цене</a>
+          <a href="">по типу</a>
+          <a href="">по названию</a>
         </div>
 
         <div class="products">
